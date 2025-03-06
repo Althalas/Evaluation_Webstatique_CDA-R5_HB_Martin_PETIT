@@ -24,6 +24,9 @@ nav{
     height: 50px;
 }
 
+section{
+    margin-bottom: 20px;
+}
 .monstre {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -76,10 +79,6 @@ nav{
     transition: filter 0.5s;
     filter: none;
 }
-}
-
-form{
-    margin-bottom: 20px;
 }
 
 .footer{
