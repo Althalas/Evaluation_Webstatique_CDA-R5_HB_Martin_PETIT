@@ -1,0 +1,96 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul{
+        display: flex;
+        list-style-type: none;
+        li{
+            margin-right: 20px;
+            a{
+                text-decoration: none;
+                color: black;
+                text-transform: uppercase;
+            }
+            a:hover{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+section{
+    margin-bottom: 20px;
+}
+.monstre {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    
+    .grid-monstre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+.icone-grid{
+    position: relative;
+        top: 10px;
+}
+}
+
+
+.globalhover {
+    background-image: url("img/global.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 259px;
+    aspect-ratio: 16/9;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: opacity 1s;
+        opacity: 0;
+    }
+
+    &:hover div {
+        opacity: 1;
+    }
+}
+
+.img-slider {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.slider{
+    filter: grayscale(100%);
+}
+
+
+@media screen and (min-width: 1024px){
+.slider:hover {
+    transition: filter 0.5s;
+    filter: none;
+}
+}
+
+.footer{
+    border-top: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
