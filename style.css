@@ -38,7 +38,12 @@ nav{
     border: 1px solid grey;
     border-collapse: collapse;
 }
+.icone-grid{
+    position: relative;
+        top: 10px;
 }
+}
+
 
 .globalhover {
     background-image: url("img/global.png");
